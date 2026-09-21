@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I'm currently working on:<br>Building scalable backend services and cloud infrastructure<br><br>👯 I'm looking to collaborate on:<br>Backend development and cloud architecture projects<br><br>🤝 I'm looking for help with:<br>Cloud native patterns and best practices<br><br>🌱 I'm currently learning:<br>Advanced Docker and cloud services<br><br>💬 Ask me about:<br>Python, .NET, and C# development<br><br>⚡ Fun fact:<br>I turn coffee and code into reliable cloud systems
+🔭 I'm currently working on:<br>Building scalable backend  and cloud infrastructure<br><br>👯 I'm looking to collaborate on:<br>Backend development and cloud architecture projects<br><br>🤝 I'm looking for help with:<br>Cloud native patterns and best practices<br><br>🌱 I'm currently learning:<br>Advanced Docker and cloud services<br><br>💬 Ask me about:<br>Python, .NET, and C# development<br><br>⚡ Fun fact:<br>I turn coffee and code into reliable cloud systems
 
 
 ## 🌐 Socials:
