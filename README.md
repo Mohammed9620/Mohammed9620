@@ -79,7 +79,7 @@ I turn coffee and code into reliable cloud systems
 
 <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Mohammed9620&layout=compact&hide_border=true&title_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
 
-<img src="https://streak-stats.demolab.com/?user=Mohammed9620&hide_border=true&ring=6C8EEF&fire=6C8EEF&currStreakLabel=E8ECF7&sideLabels=E8ECF7&dates=8A9BC4&background=0A1128" />
+<img src="https://streak-stats.demolab.com/?user=Mohammed9620&hide_border=true&ring=6C8EEF&fire=FF7F32&currStreakLabel=E8ECF7&currStreakNum=E8ECF7&sideLabels=E8ECF7&sideNums=E8ECF7&dates=8A9BC4&background=0A1128" />
 
 </div>
 
