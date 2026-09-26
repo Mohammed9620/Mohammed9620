@@ -1,21 +1,90 @@
-# 💫 About Me:
-🔭 I'm currently working on:<br>Building scalable backend  and cloud infrastructure<br><br>👯 I'm looking to collaborate on:<br>Backend development and cloud architecture projects<br><br>🤝 I'm looking for help with:<br>Cloud native patterns and best practices<br><br>🌱 I'm currently learning:<br> Docker and cloud services<br><br>💬 Ask me about:<br>Python, .NET, and C# development<br><br>⚡ Fun fact:<br>I turn coffee and code into reliable cloud systems
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1128,50:1B2A4A,100:2C3E70&height=220&section=header&text=Mohammed&fontSize=60&fontColor=E8ECF7&fontAlignY=38&desc=Software%20Engineer&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/mohammad-abu-qare-803396384) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/LetZealousideal9528) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:MohammadAssem_AQ@outlook.com) 
+<a href="https://linkedin.com/in/mohammad-abu-qare-803396384">
+  <img src="https://img.shields.io/badge/LinkedIn-0A1F44?style=for-the-badge&logo=linkedin&logoColor=E8ECF7" />
+</a>
+<a href="mailto:MohammadAssem_AQ@outlook.com">
+  <img src="https://img.shields.io/badge/Email-0A1F44?style=for-the-badge&logo=microsoftoutlook&logoColor=E8ECF7" />
+</a>
+<a href="https://reddit.com/user/LetZealousideal9528">
+  <img src="https://img.shields.io/badge/Reddit-0A1F44?style=for-the-badge&logo=reddit&logoColor=E8ECF7" />
+</a>
 
-# 💻 Tech Stack:
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Playwright](https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white) ![PlayStation Network](https://img.shields.io/badge/PSN-%230070D1.svg?style=for-the-badge&logo=Playstation&logoColor=white) ![Sidequest](https://img.shields.io/badge/sidequest-%23101227.svg?style=for-the-badge&logo=sidequest&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=Mohammed9620&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=Mohammed9620&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=Mohammed9620&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+</div>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Mohammed9620&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+<br>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## 💫 About Me
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**🔭 I'm currently working on:**
+Building scalable backend and cloud infrastructure
+
+**👯 I'm looking to collaborate on:**
+Backend development and cloud architecture projects
+
+**🤝 I'm looking for help with:**
+Cloud native patterns and best practices
+
+</td>
+<td valign="top" width="50%">
+
+**🌱 I'm currently learning:**
+Docker and cloud services
+
+**💬 Ask me about:**
+Python, .NET, and C# development
+
+**⚡ Fun fact:**
+I turn coffee and code into reliable cloud systems
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## Tech Stack
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Python-0A1F44?style=for-the-badge&logo=python&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/C++-0A1F44?style=for-the-badge&logo=cplusplus&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/Flask-0A1F44?style=for-the-badge&logo=flask&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/FastAPI-0A1F44?style=for-the-badge&logo=fastapi&logoColor=E8ECF7" />
+<br>
+<img src="https://img.shields.io/badge/Azure-0A1F44?style=for-the-badge&logo=microsoftazure&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/Docker-0A1F44?style=for-the-badge&logo=docker&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/PostgreSQL-0A1F44?style=for-the-badge&logo=postgresql&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/MySQL-0A1F44?style=for-the-badge&logo=mysql&logoColor=E8ECF7" />
+<br>
+<img src="https://img.shields.io/badge/Git-0A1F44?style=for-the-badge&logo=git&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/GitHub_Actions-0A1F44?style=for-the-badge&logo=githubactions&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/Postman-0A1F44?style=for-the-badge&logo=postman&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/Figma-0A1F44?style=for-the-badge&logo=figma&logoColor=E8ECF7" />
+
+</div>
+
+<br>
+
+## GitHub Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.shion.dev/api?username=Mohammed9620&hide_border=true&title_color=6C8EEF&icon_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
+<img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Mohammed9620&layout=compact&hide_border=true&title_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
+
+<img src="https://streak-stats.demolab.com/?user=Mohammed9620&hide_border=true&ring=6C8EEF&fire=6C8EEF&currStreakLabel=E8ECF7&sideLabels=E8ECF7&dates=8A9BC4&background=0A1128" />
+
+</div>
+
+<br>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C3E70,50:1B2A4A,100:0A1128&height=100&section=footer" width="100%"/>
+</div>
