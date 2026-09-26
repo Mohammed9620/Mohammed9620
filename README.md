@@ -23,7 +23,7 @@
 <td valign="top" width="50%">
 
 **🔭 I'm currently working on:**
-Building scalable backend and cloud infrastructure
+Building backend and cloud infrastructure
 
 **👯 I'm looking to collaborate on:**
 Backend development and cloud architecture projects
@@ -59,6 +59,7 @@ I turn coffee and code into reliable cloud systems
 <img src="https://img.shields.io/badge/FastAPI-0A1F44?style=for-the-badge&logo=fastapi&logoColor=E8ECF7" />
 <br>
 <img src="https://img.shields.io/badge/Azure-0A1F44?style=for-the-badge&logo=microsoftazure&logoColor=E8ECF7" />
+<img src="https://img.shields.io/badge/Bicep-0A1F44?style=for-the-badge&logo=bicep&logoColor=E8ECF7" />
 <img src="https://img.shields.io/badge/Docker-0A1F44?style=for-the-badge&logo=docker&logoColor=E8ECF7" />
 <img src="https://img.shields.io/badge/PostgreSQL-0A1F44?style=for-the-badge&logo=postgresql&logoColor=E8ECF7" />
 <img src="https://img.shields.io/badge/MySQL-0A1F44?style=for-the-badge&logo=mysql&logoColor=E8ECF7" />
@@ -76,7 +77,6 @@ I turn coffee and code into reliable cloud systems
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.shion.dev/api?username=Mohammed9620&hide_border=true&title_color=6C8EEF&icon_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
 <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Mohammed9620&layout=compact&hide_border=true&title_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
 
 <img src="https://streak-stats.demolab.com/?user=Mohammed9620&hide_border=true&ring=6C8EEF&fire=6C8EEF&currStreakLabel=E8ECF7&sideLabels=E8ECF7&dates=8A9BC4&background=0A1128" />
