@@ -39,59 +39,18 @@
 
 <br>
 
-## 💫 About Me
+## About Me
 
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**🔭 I'm currently working on:**
-Building backend and cloud infrastructure
-
-**👯 I'm looking to collaborate on:**
-Backend development and cloud architecture projects
-
-**🤝 I'm looking for help with:**
-Cloud native patterns and best practices
-
-</td>
-<td valign="top" width="50%">
-
-**🌱 I'm currently learning:**
-Docker and cloud services
-
-**💬 Ask me about:**
-Python, .NET, and C# development
-
-**⚡ Fun fact:**
-I turn coffee and code into reliable cloud systems
-
-</td>
-</tr>
-</table>
+<div align="center">
+<img src="./cards/about.svg" width="100%" alt="About Me — currently working on backend and cloud infrastructure; learning Docker and cloud services; ask me about Python, .NET, and C#" />
+</div>
 
 <br>
 
 ## Tech Stack
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/Python-0A1F44?style=for-the-badge&logo=python&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/C++-0A1F44?style=for-the-badge&logo=cplusplus&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/Flask-0A1F44?style=for-the-badge&logo=flask&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/FastAPI-0A1F44?style=for-the-badge&logo=fastapi&logoColor=E8ECF7" />
-<br>
-<img src="https://img.shields.io/badge/Azure-0A1F44?style=for-the-badge&logo=microsoftazure&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/Bicep-0A1F44?style=for-the-badge&logo=bicep&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/Docker-0A1F44?style=for-the-badge&logo=docker&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/PostgreSQL-0A1F44?style=for-the-badge&logo=postgresql&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/MySQL-0A1F44?style=for-the-badge&logo=mysql&logoColor=E8ECF7" />
-<br>
-<img src="https://img.shields.io/badge/Git-0A1F44?style=for-the-badge&logo=git&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/GitHub_Actions-0A1F44?style=for-the-badge&logo=githubactions&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/Postman-0A1F44?style=for-the-badge&logo=postman&logoColor=E8ECF7" />
-<img src="https://img.shields.io/badge/Figma-0A1F44?style=for-the-badge&logo=figma&logoColor=E8ECF7" />
-
+<img src="./cards/tech-stack.svg" width="100%" alt="Tech Stack — Python, C++, Flask, FastAPI, Azure, Bicep, Docker, PostgreSQL, MySQL, Git, GitHub Actions, Postman, Figma" />
 </div>
 
 <br>

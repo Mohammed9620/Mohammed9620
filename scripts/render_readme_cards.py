@@ -450,6 +450,100 @@ def repo_card(i, card_slug, repo_name, title, desc, lang, tag, stars):
     )
 
 
+# ---- 6 · about me -------------------------------------------------------------
+ABOUT_LEFT = [
+    ("I'm currently working on:", "Building backend and cloud infrastructure"),
+    ("I'm looking to collaborate on:", "Backend development and cloud architecture projects"),
+    ("I'm looking for help with:", "Cloud native patterns and best practices"),
+]
+ABOUT_RIGHT = [
+    ("I'm currently learning:", "Docker and cloud services"),
+    ("Ask me about:", "Python, .NET, and C# development"),
+    ("Fun fact:", "I turn coffee and code into reliable cloud systems"),
+]
+
+
+def about():
+    h = 304
+    items = []
+    for col_x, rows, base_delay in ((36, ABOUT_LEFT, 3.75), (468, ABOUT_RIGHT, 3.90)):
+        for i, (heading, body_text) in enumerate(rows):
+            y = 52 + i * 88
+            delay = base_delay + i * 0.10
+            items.append(
+                f'<g class="r" {d(delay)}>'
+                f'<rect x="{col_x}" y="{y - 12}" width="8" height="8" rx="2" fill="{ACCENT}"/>'
+                f'<text x="{col_x + 18}" y="{y}" font-family="{SERIF}" font-size="23" fill="{TEXT}">{escape(heading)}</text>'
+                f'<text x="{col_x}" y="{y + 28}" font-family="{SANS}" font-size="15" fill="{TEXT_SOFT}">{escape(body_text)}</text>'
+                f"</g>"
+            )
+            if i < 2:
+                items.append(
+                    f'<rect class="f" {d(delay)} x="{col_x}" y="{y + 50}" width="376" height="1" fill="{BORDER}"/>'
+                )
+
+    body = f"""
+<rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" rx="14" fill="{BG}" stroke="{BORDER}" stroke-width="1"/>
+<rect class="f" {d(3.75)} x="440" y="28" width="1" height="248" fill="{BORDER}"/>
+{''.join(items)}
+"""
+    write(
+        "about.svg",
+        svg(
+            W,
+            h,
+            body,
+            ["serif", "sans"],
+            "About Me — building backend and cloud infrastructure; learning Docker and cloud services; ask me about Python, .NET, and C#",
+        ),
+    )
+
+
+# ---- 7 · tech stack -----------------------------------------------------------
+STACK_ROWS = [
+    ["Python", "C++", "Flask", "FastAPI"],
+    ["Azure", "Bicep", "Docker", "PostgreSQL", "MySQL"],
+    ["Git", "GitHub Actions", "Postman", "Figma"],
+]
+
+
+def tech_stack():
+    h = 212
+    x0, inner_w, gap, bh = 32, 816, 12, 46
+    pills = []
+    idx = 0
+    for r_idx, row in enumerate(STACK_ROWS):
+        ry = 26 + r_idx * 57
+        n = len(row)
+        bw = (inner_w - (n - 1) * gap) / n
+        for c_idx, tool in enumerate(row):
+            bx = x0 + c_idx * (bw + gap)
+            delay = 4.15 + idx * 0.04
+            pills.append(
+                f'<g class="r" {d(delay)}>'
+                f'<rect x="{bx:.1f}" y="{ry}" width="{bw:.1f}" height="{bh}" rx="10" fill="#0F1A3A" stroke="{BORDER}" stroke-width="1"/>'
+                f'<rect x="{bx + 18:.1f}" y="{ry + 19}" width="8" height="8" rx="2" fill="{ACCENT}"/>'
+                f'<text x="{bx + 36:.1f}" y="{ry + 28}" font-family="{SANS}" font-weight="600" font-size="15" fill="{TEXT}">{escape(tool)}</text>'
+                f"</g>"
+            )
+            idx += 1
+
+    body = f"""
+<rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" rx="14" fill="{BG}" stroke="{BORDER}" stroke-width="1"/>
+{''.join(pills)}
+"""
+    write(
+        "tech-stack.svg",
+        svg(
+            W,
+            h,
+            body,
+            ["sans", "sans-b"],
+            "Tech Stack — Python, C++, Flask, FastAPI, Azure, Bicep, Docker, PostgreSQL, MySQL, Git, GitHub Actions, Postman, Figma",
+        ),
+    )
+
+
 if __name__ == "__main__":
     with open(DATA, encoding="utf-8") as f:
         data = json.load(f)
@@ -483,3 +577,5 @@ if __name__ == "__main__":
     stars = repo_stars()
     for i, (slug, repo_name, title, desc, lang, tag) in enumerate(REPOS):
         repo_card(i, slug, repo_name, title, desc, lang, tag, stars.get(repo_name, 0))
+    about()
+    tech_stack()
