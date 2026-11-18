@@ -13,7 +13,9 @@
 .live{animation:pulse 2.2s ease-in-out infinite}
 .n{transform-box:fill-box;animation:nudge 2.2s ease-in-out infinite}
 .nu{transform-box:fill-box;animation:nudgeup 2.2s ease-in-out infinite}
-@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu{animation:none!important;opacity:1!important;transform:none!important}}
+@keyframes sign{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+.sig{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:sign .6s cubic-bezier(.35,0,.2,1) forwards}
+@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu,.sig{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}}
 </style>
 <rect x=".5" y=".5" width="879" height="329" rx="14" fill="#0A1128" stroke="#1B2A4A" stroke-width="1"/>
 <text class="f" style="animation-delay:2.40s" x="44" y="50" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="1.2" fill="#8A9BC4">THE LAST 12 MONTHS ON GITHUB</text>

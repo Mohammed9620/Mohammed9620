@@ -13,7 +13,9 @@
 .live{animation:pulse 2.2s ease-in-out infinite}
 .n{transform-box:fill-box;animation:nudge 2.2s ease-in-out infinite}
 .nu{transform-box:fill-box;animation:nudgeup 2.2s ease-in-out infinite}
-@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu{animation:none!important;opacity:1!important;transform:none!important}}
+@keyframes sign{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+.sig{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:sign .6s cubic-bezier(.35,0,.2,1) forwards}
+@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu,.sig{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}}
 </style>
 <defs>
   <clipPath id="card-build"><rect width="285.333" height="200" rx="14"/></clipPath>
