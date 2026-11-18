@@ -90,3 +90,9 @@ I turn coffee and code into reliable cloud systems
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C3E70,50:1B2A4A,100:0A1128&height=100&section=footer" width="100%"/>
 </div>
+
+## 🐟 My Koi
+
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="My koi" />
+</p>
