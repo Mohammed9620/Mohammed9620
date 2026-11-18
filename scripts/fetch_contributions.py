@@ -82,48 +82,6 @@ def fetch_calendar(username: str, token: str) -> dict:
     return user["contributionsCollection"]["contributionCalendar"]
 
 
-def compute_streaks(days: list[dict]) -> tuple[dict, dict]:
-    longest_len = 0
-    longest_start = None
-    longest_end = None
-
-    run_len = 0
-    run_start = None
-    for d in days:
-        if d["count"] > 0:
-            if run_len == 0:
-                run_start = d["date"]
-            run_len += 1
-            if run_len >= longest_len:
-                longest_len = run_len
-                longest_start = run_start
-                longest_end = d["date"]
-        else:
-            run_len = 0
-            run_start = None
-
-    # Current streak: ends on last day if non-zero, else yesterday if non-zero
-    cur_len = 0
-    cur_start = None
-    cur_end = None
-    if days:
-        end_idx = len(days) - 1
-        if days[end_idx]["count"] == 0 and len(days) >= 2 and days[end_idx - 1]["count"] > 0:
-            end_idx -= 1
-        if days[end_idx]["count"] > 0:
-            cur_end = days[end_idx]["date"]
-            idx = end_idx
-            while idx >= 0 and days[idx]["count"] > 0:
-                cur_start = days[idx]["date"]
-                cur_len += 1
-                idx -= 1
-
-    return (
-        {"length": cur_len, "start": cur_start, "end": cur_end},
-        {"length": longest_len, "start": longest_start, "end": longest_end},
-    )
-
-
 def build_summary(username: str, calendar: dict) -> dict:
     days = []
     for week in calendar["weeks"]:
@@ -139,8 +97,6 @@ def build_summary(username: str, calendar: dict) -> dict:
     total = int(calendar["totalContributions"])
     active_days = sum(1 for d in days if d["count"] > 0)
     avg = round(total / max(1, active_days), 1)
-    current_streak, longest_streak = compute_streaks(days)
-
     best = max(days, key=lambda d: (d["count"], d["date"])) if days else {"date": "", "count": 0}
 
     month_totals: dict[str, int] = defaultdict(int)
@@ -158,8 +114,6 @@ def build_summary(username: str, calendar: dict) -> dict:
         "total_contributions": total,
         "active_days": active_days,
         "avg_per_active_day": avg,
-        "current_streak": current_streak,
-        "longest_streak": longest_streak,
         "best_day": {"date": best["date"], "count": best["count"]},
         "monthly": monthly,
         "days": days,
@@ -180,7 +134,6 @@ def main() -> int:
         f"wrote {os.path.relpath(OUT_PATH, ROOT)}: "
         f"{summary['total_contributions']} contributions, "
         f"{summary['active_days']} active days, "
-        f"streak {summary['current_streak']['length']} (longest {summary['longest_streak']['length']}), "
         f"best {summary['best_day']['count']} on {summary['best_day']['date']}"
     )
     return 0

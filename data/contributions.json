@@ -1,23 +1,13 @@
 {
   "username": "Mohammed9620",
-  "generated_at": "2026-11-18T21:12:02Z",
+  "generated_at": "2026-11-18T21:46:35Z",
   "range": {
     "start": "2025-11-16",
-    "end": "2026-11-18"
+    "end": "2026-11-19"
   },
-  "total_contributions": 203,
-  "active_days": 69,
-  "avg_per_active_day": 2.9,
-  "current_streak": {
-    "length": 1,
-    "start": "2026-11-18",
-    "end": "2026-11-18"
-  },
-  "longest_streak": {
-    "length": 13,
-    "start": "2026-09-20",
-    "end": "2026-10-02"
-  },
+  "total_contributions": 204,
+  "active_days": 68,
+  "avg_per_active_day": 3.0,
   "best_day": {
     "date": "2026-09-06",
     "count": 16
@@ -41,11 +31,11 @@
     },
     {
       "month": "2026-04",
-      "total": 5
+      "total": 4
     },
     {
       "month": "2026-05",
-      "total": 8
+      "total": 9
     },
     {
       "month": "2026-06",
@@ -69,7 +59,7 @@
     },
     {
       "month": "2026-11",
-      "total": 35
+      "total": 36
     }
   ],
   "days": [
@@ -735,11 +725,11 @@
     },
     {
       "date": "2026-04-30",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-05-01",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-05-02",
@@ -755,11 +745,11 @@
     },
     {
       "date": "2026-05-05",
-      "count": 2
+      "count": 1
     },
     {
       "date": "2026-05-06",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-05-07",
@@ -1307,7 +1297,7 @@
     },
     {
       "date": "2026-09-20",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-09-21",
@@ -1315,7 +1305,7 @@
     },
     {
       "date": "2026-09-22",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-09-23",
@@ -1331,11 +1321,11 @@
     },
     {
       "date": "2026-09-26",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-09-27",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-09-28",
@@ -1411,11 +1401,11 @@
     },
     {
       "date": "2026-10-16",
-      "count": 2
+      "count": 1
     },
     {
       "date": "2026-10-17",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-10-18",
@@ -1544,6 +1534,10 @@
     {
       "date": "2026-11-18",
       "count": 2
+    },
+    {
+      "date": "2026-11-19",
+      "count": 1
     }
   ]
 }

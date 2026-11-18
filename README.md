@@ -26,10 +26,10 @@
 
 <div align="center">
 <img src="./cards/heatmap.svg" width="100%" alt="Mohammed's contribution graph in blue, refreshed daily" /><br>
-<img src="./cards/activity.svg" width="100%" alt="Monthly contributions bar chart with streak, active days and busiest day" />
+<img src="./cards/activity.svg" width="100%" alt="Monthly contributions bar chart with active days and busiest day" />
 </div>
 
-## 🚀 Featured Repositories
+## Featured Repositories
 
 <div align="center">
 <a href="https://github.com/Mohammed9620/-Zero-to-live-aspnet-guide"><img src="./cards/repo-aspnet-guide.svg" width="32.5%" alt="Zero-to-Live ASP.NET Guide" /></a>
@@ -91,18 +91,6 @@ I turn coffee and code into reliable cloud systems
 <img src="https://img.shields.io/badge/GitHub_Actions-0A1F44?style=for-the-badge&logo=githubactions&logoColor=E8ECF7" />
 <img src="https://img.shields.io/badge/Postman-0A1F44?style=for-the-badge&logo=postman&logoColor=E8ECF7" />
 <img src="https://img.shields.io/badge/Figma-0A1F44?style=for-the-badge&logo=figma&logoColor=E8ECF7" />
-
-</div>
-
-<br>
-
-## GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Mohammed9620&layout=compact&hide_border=true&title_color=6C8EEF&text_color=E8ECF7&bg_color=0A1128" />
-
-<img src="https://streak-stats.demolab.com/?user=Mohammed9620&hide_border=true&ring=6C8EEF&fire=FF7F32&currStreakLabel=E8ECF7&currStreakNum=E8ECF7&sideLabels=E8ECF7&sideNums=E8ECF7&dates=8A9BC4&background=0A1128" />
 
 </div>
 
