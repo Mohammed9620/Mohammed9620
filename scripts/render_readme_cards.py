@@ -65,7 +65,9 @@ BASE_CSS = """
 .live{animation:pulse 2.2s ease-in-out infinite}
 .n{transform-box:fill-box;animation:nudge 2.2s ease-in-out infinite}
 .nu{transform-box:fill-box;animation:nudgeup 2.2s ease-in-out infinite}
-@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu{animation:none!important;opacity:1!important;transform:none!important}}
+@keyframes sign{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+.sig{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:sign .6s cubic-bezier(.35,0,.2,1) forwards}
+@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.live,.n,.nu,.sig{animation:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}}
 """
 
 
@@ -90,8 +92,8 @@ def svg(w, h, body, fonts, label, extra_css="", left=0, right=0, bottom=BOTTOM):
     css = font_face(fonts) + BASE_CSS + extra_css
     if os.environ.get("STATIC"):
         css += (
-            ".r,.f,.g,.p,.live,.n,.nu{animation:none!important;"
-            "opacity:1!important;transform:none!important}"
+            ".r,.f,.g,.p,.live,.n,.nu,.sig{animation:none!important;"
+            "opacity:1!important;transform:none!important;stroke-dashoffset:0!important}"
         )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w:.3f}" height="{h}" '
@@ -133,34 +135,85 @@ def text_lines(x, y, lines, lh, attrs):
 # ---- 1 · hero -----------------------------------------------------------------
 def hero():
     h = 252
-    is_static = bool(os.environ.get("STATIC"))
-
-    shine_anim = ""
-    if not is_static:
-        shine_anim = (
-            '<animateTransform attributeName="gradientTransform" type="translate" '
-            'values="-500 0;500 0;500 0" keyTimes="0;.45;1" dur="8s" begin="1.4s" '
-            'repeatCount="indefinite"/>'
-        )
-    grad_x1, grad_x2 = ("-100", "460") if is_static else ("0", "500")
+    sig_strokes = [
+        # M
+        (
+            "M 48,133 C 56,112 64,88 72,73 C 74,69 76,72 76,78 C 78,94 80,109 84,119 "
+            "C 92,102 101,85 110,73 C 113,69 115,72 115,79 C 115,101 116,121 120,134 "
+            "C 123,138 129,132 135,124",
+            TEXT,
+            3.5,
+            1.0,
+            0.15,
+            0.60,
+        ),
+        # oh
+        (
+            "M 135,124 C 141,114 147,108 153,109 C 145,106 135,113 135,125 "
+            "C 135,134 143,137 151,134 C 159,130 161,117 156,110 C 163,106 177,85 184,71 "
+            "C 186,67 181,67 178,73 C 174,85 172,113 171,135 C 173,121 180,108 189,108 "
+            "C 196,108 198,116 197,128 C 197,135 203,134 209,126",
+            TEXT,
+            3.2,
+            1.0,
+            0.72,
+            0.48,
+        ),
+        # amm
+        (
+            "M 209,126 C 216,113 224,108 231,109 C 222,107 212,115 212,126 "
+            "C 212,135 220,137 227,132 C 232,128 235,117 235,109 C 234,120 233,130 236,134 "
+            "C 239,136 244,129 248,120 C 249,113 249,108 249,108 C 248,119 248,130 248,135 "
+            "C 250,121 257,108 264,108 C 269,108 270,117 269,135 "
+            "C 271,121 278,108 285,108 C 290,108 291,118 290,132 C 291,136 296,131 300,121 "
+            "C 301,113 301,108 301,108 C 300,119 300,130 300,135 "
+            "C 302,121 309,108 316,108 C 321,108 322,117 321,135 "
+            "C 323,121 330,108 337,108 C 342,108 343,118 342,131 C 343,136 348,132 353,125",
+            TEXT,
+            3.2,
+            1.0,
+            1.16,
+            0.68,
+        ),
+        # ed
+        (
+            "M 353,125 C 362,122 368,116 367,110 C 366,106 358,107 355,115 "
+            "C 352,124 355,134 363,135 C 370,135 376,129 382,121 "
+            "C 387,114 393,108 398,109 C 390,107 381,115 381,126 "
+            "C 381,134 388,136 394,132 C 400,127 404,106 408,72 "
+            "C 406,96 403,120 404,132 C 405,137 414,133 423,125",
+            TEXT,
+            3.2,
+            1.0,
+            1.80,
+            0.50,
+        ),
+        # subtle signature underline
+        (
+            "M 48,150 C 148,145 278,144 416,149",
+            ACCENT,
+            2.2,
+            0.85,
+            2.26,
+            0.38,
+        ),
+    ]
+    sig_paths = "".join(
+        f'<path class="sig" pathLength="1000" d="{path}" stroke="{color}" '
+        f'stroke-width="{sw}" stroke-opacity="{op}" '
+        f'style="animation-delay:{delay:.2f}s;animation-duration:{dur:.2f}s"/>'
+        for path, color, sw, op, delay, dur in sig_strokes
+    )
 
     body = f"""
-<defs>
-  <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="{grad_x1}" y1="0" x2="{grad_x2}" y2="0">
-    <stop offset="0" stop-color="{TEXT}"/>
-    <stop offset=".42" stop-color="{TEXT}"/>
-    <stop offset=".5" stop-color="{ACCENT}"/>
-    <stop offset=".58" stop-color="{TEXT}"/>
-    <stop offset="1" stop-color="{TEXT}"/>
-    {shine_anim}
-  </linearGradient>
-</defs>
 <rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" rx="14" fill="{BG}" stroke="{BORDER}" stroke-width="1"/>
 <g class="f" {d(0.0)}>
   <rect class="live" x="44" y="40" width="8" height="8" rx="2" fill="{ACCENT}"/>
   <text x="62" y="48" font-family="{MONO}" font-size="13" letter-spacing="1.2" fill="{MUTED}">SOFTWARE ENGINEER &#183; BACKEND &amp; CLOUD</text>
 </g>
-<text class="r" {d(0.15)} x="44" y="136" font-family="{SERIF}" font-size="86" letter-spacing="-1.2" fill="url(#shine)">Mohammed</text>
+<g aria-label="Mohammed">
+  {sig_paths}
+</g>
 <g class="r" {d(0.32)}>
   <text x="44" y="182" font-family="{SANS}" font-size="19" fill="{TEXT_SOFT}">Software Engineer &#8212; building backend systems &amp; cloud infrastructure</text>
 </g>
@@ -175,7 +228,7 @@ def hero():
             W,
             h,
             body,
-            ["serif", "sans", "mono"],
+            ["sans", "mono"],
             "Mohammed — Software Engineer — building backend systems & cloud infrastructure",
         ),
     )
